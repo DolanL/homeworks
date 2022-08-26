@@ -1,0 +1,17 @@
+.someClass {
+    border: 1px solid black;
+}
+
+
+.error__text {
+    color: red;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}

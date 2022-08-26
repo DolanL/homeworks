@@ -1,0 +1,49 @@
+.message__wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display:flex;
+    align-items: flex-end;
+}
+
+.message__img {
+    max-width:40px;
+    max-height: 40px;
+    border: 1px solid black;
+    border-radius: 60%;
+}
+
+.message__item {
+    width: 170px;
+    background-color: black;
+    border-radius: 1px;
+    position: relative;
+    color: white;
+    padding-left: 10px;
+    margin-left: 5px;
+    overflow-wrap: break-word;
+    padding-bottom: 20px;
+}
+
+
+.message__time {
+    position: absolute;
+    right: 7px;
+    bottom: 3px;
+    color: grey;
+
+}
+
+.message__name {
+    color: purple;
+}
+
+.message__item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(40px at top left, transparent 50%, black 0) no-repeat right bottom;
+}
