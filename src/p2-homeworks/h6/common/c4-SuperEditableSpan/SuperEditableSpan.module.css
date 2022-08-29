@@ -1,0 +1,5 @@
+.editableSpan {
+    display: inline-block;
+    height: 37px;
+    cursor: pointer;
+}

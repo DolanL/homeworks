@@ -1,0 +1,71 @@
+
+
+.menu__btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu__span, .menu__span::before, .menu__span::after {
+    position: absolute;
+    top:50%; margin-top: -1px;
+    left: 50%; margin-left: -7.5px;
+    width: 15px;
+    height: 2px;
+    background-color: grey;
+}
+
+.menu__span::before, .menu__span::after {
+    content: "";
+    display: block;
+    transition: 0.2s;
+}
+
+.menu__span::before {
+    transform: translateY(-5px);
+}
+
+.menu__span::after {
+    transform: translateY(5px);
+}
+
+.menu__span__active::before {
+    transform: rotate(45deg);
+}
+
+.menu__span__active {
+    height: 0;
+}
+
+.menu__span__active::after {
+    transform: rotate(-45deg);
+}
+
+.menu__block {
+    width: 270px;
+    display: flex;
+    align-items: center;
+}
+
+.menu__block_Navlink {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+.menu__nav {
+    transition: 0.5s;
+    transform-origin: left center;
+    transform: scaleX(0) translateX(20%);
+    opacity: 0;
+}
+
+.menu__nav__active {
+    transform: scaleX(1) translateX(0);
+    opacity: 1;
+}

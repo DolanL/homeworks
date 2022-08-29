@@ -1,10 +1,30 @@
 .superInput {
+    background: none;
+    color: gainsboro;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 0;
+    transition: 0.5s;
+}
 
+
+.superInput:focus, .superInput:hover {
+    border: 1px solid blue;
 }
 
 .errorInput {
-    border: 3px solid lime;
+    border: 1px solid red;
     background: red;
+    background: none;
+    color: gainsboro;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border-radius: 0;
+    transition: 0.5s;
 }
 
 .error {
