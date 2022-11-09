@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {ChangeEvent} from 'react'
 
 type SuperDoubleRangePropsType = {
     onChangeRange?: (value: [number, number]) => void
@@ -12,11 +12,15 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
         // min, max, step, disable, ...
     }
 ) => {
-    // сделать самому, можно подключать библиотеки
+
+
+    const onChangeCallBack = (e: ChangeEvent<HTMLInputElement>) => {
+        onChangeRange && onChangeRange([+e.currentTarget.value, +e.currentTarget.value])
+    }
 
     return (
         <>
-            DoubleRange
+            <input onChange={onChangeCallBack} type="range"/>
         </>
     )
 }
